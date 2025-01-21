@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.parallax {
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center; /* Centre la position de l'image */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
+}
+.pt-40vh{
+    padding-top: 40vh;
+}
+.pb-40vh{
+    padding-bottom: 40vh;
+}
+.important {
+    font-weight: bolder;
+    color: #EF4444;
+}
+.underline-anim:hover::after {
+    width: 100%;
+}
+.underline-anim::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s;
+}

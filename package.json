@@ -1,0 +1,23 @@
+{
+  "name": "infuseting.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/style.css",
+    "build:html": "npm run build:css && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infuseting/Infuseting.github.io.git"
+  },
+  "author": "Infuseting (Arthur)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Infuseting/Infuseting.github.io/issues"
+  },
+  "homepage": "https://github.com/Infuseting/Infuseting.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
