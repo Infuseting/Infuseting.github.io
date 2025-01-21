@@ -43,11 +43,9 @@ async function infiniteScroll(element, direction) {
     element.scrollLeft = width;
 
     async function scroll() {
-        element.scrollLeft += step;
+        element.scrollLeft += direction === 'left' ? -step : step;
         scrollAmount += step;
-        console.log(scrollAmount, element.scrollWidth - window.innerWidth);
 
-        // Add element at the end to create infinite effect
         if (scrollAmount >= element.scrollWidth - window.innerWidth) {
             const firstChild = element.firstElementChild;
             element.appendChild(firstChild);

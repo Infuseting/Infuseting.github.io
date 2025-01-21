@@ -27,4 +27,5 @@
     width: 0;
     height: 2px;
     transition: width 0.3s;
+    white-space: nowrap;
 }
