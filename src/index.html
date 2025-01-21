@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Infuseting - Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Infuseting - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body class="h-screen w-screen">
   <div class="parallax" style="background-image: url('https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg')">
-    <div class="w-full py-4 min-h-screen backdrop-blur-lg">
-        <div class="flex flex-col items-center h-full pt-40vh pb-40vh">
+    <div class="w-full py-4 min-h-screen backdrop-blur-lg" data-aos="fade-left"
+         data-aos-duration="200">
+        <div class="flex flex-col items-center h-full pt-40vh pb-40vh" >
             <h1 id="h1TitleHomePage" class="text-5xl font-bold text-black h-12"></h1>
             <p class="text-2xl text-black">I'm a junior developer</p>
         </div>
@@ -237,7 +239,8 @@
     </div>
   </div>
   <div id="Galade" class="parallax" style="background-image: url('https://cdn.discordapp.com/attachments/738549495146741781/899369624917917758/2021-10-17_19.49.21.png?ex=679095fc&is=678f447c&hm=23166f172d5dd39312c6f4f7ce111e1ee13d92a4788997167214f007dcab3de5&')">
-      <div class="w-full min-h-screen">
+      <div class="w-full min-h-screen" data-aos="flip-up"
+           data-aos-duration="500">
           <div class="text-white py-20 min-h-screen">
               <h1 class="text-5xl font-bold text-center">Galade</h1>
               <div class="flex flex-row justify-center">
@@ -245,57 +248,61 @@
                       <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" class="inline" width="30px" fill="currentColor"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
                       Website
                   </a>
-                  <a class="underline-anim after:bg-red-500 text-2xl ml-2" href="https://discord.gg/uHSmey3Svq" target="_blank">
+                  <a class="underline-anim after:bg-red-500 text-2xl" href="https://discord.gg/uHSmey3Svq" target="_blank">
                       <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" class="inline" fill="currentColor"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
                       Discord
+                  </a>
+                  <a class="underline-anim after:bg-red-500 text-2xl ml-2" href="https://github.com/Galade-Minecraft-RP/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" class="inline" fill="currentColor"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+                      Github
                   </a>
               </div>
 
               <div class="flex flex-row justify-center pt-2">
-                  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-                  <img class="pl-2" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-                  <img class="pl-2" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-                  <img class="pl-2" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
-                  <img class="pl-2" src="https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white" alt="Electron.js">
+                  <img class="lazyload" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white" alt="Electron.js">
               </div>
               <div class="auto-scroll-area mt-5">
                   <div class="flex right overflow-x-hidden h-64">
-                      <img loading="lazy" src="https://media.discordapp.net/attachments/738550587364212767/860593051058700289/Sans_titre_3.gif?ex=67913dbc&is=678fec3c&hm=774544bc48efb057f6e9a99891405234bafd09f854a54235a441a148e168789c&" alt="GIF 1">
-                      <img class="ml-2 h-64" loading="lazy" src="https://media.discordapp.net/attachments/828663058271567944/878351544498667530/2021-08-20_20-11-04-7.gif?ex=67913f1f&is=678fed9f&hm=dfe9af99408b8c2a02c96742bba1a3c4f3dd8b68b507ce04298ef45b60508f1e&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1306680588509380718/unknown_2024.11.14-18.46_2.gif?ex=679132a1&is=678fe121&hm=3ca808ea34ab3f100a6c76ba9c04b63151836f5c09245759e22e7483761edc60&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258147669264695327/ezgif-7-98a934dc46.gif?ex=6790a313&is=678f5193&hm=e1ef5c66e2dfd1899ad99b7ce1544620db590e975bbc0fe9f1cf3c4c17b6e472&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1261314159472148611/unknown_2024.07.12-15.28_1.gif?ex=6790f359&is=678fa1d9&hm=ea0951ceb81496ce626d2812ef985217cde3946b67ffb5fe77fb4486381f55b1&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1257082400777834597/VidosanstitreRaliseavecClipchamp2-ezgif.com-video-to-gif-converter_1.gif?ex=6790b777&is=678f65f7&hm=045f05d0e5a1131f632fcb8cc17cfead5a459ab580fbe648d573dc263cdc7e25&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1257069816041181275/ezgif-7-aee4137ab6.gif?ex=6790abbf&is=678f5a3f&hm=d1a1b91df6bc33b094f57b562a1bf70d53f107dfb10e43acb4a870577c1ae48f&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258177243402993755/Video_sans_titre_Realisee_avec_Clipchamp_5.gif?ex=6790be9e&is=678f6d1e&hm=ad9a48107077dcdbae5c1eb0a0b364f56e2ede827bead156bd95aec03e84f99f&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258889544099565638/ezgif-4-d6ad42981a-1.gif?ex=6790b300&is=678f6180&hm=476a6bd0ad45cec3731b2b7c8d08e9ed12476d7948812ca730ee4832147e5a65&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258931077729484871/ezgif-4-381c635220.gif?ex=6790d9ae&is=678f882e&hm=f8023f0d429d06afb094e0bdfc0e1e4adb2d6ad782ffc5f4486fecb2dbdcc498&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258949730818588812/ezgif-4-d660424049.gif?ex=6790eb0d&is=678f998d&hm=0351ffbb2e155295a4c6a8502b774c28e2b6d4613c0589e2cb3ce36a99467422&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258953010630103050/ezgif-4-f8e447f04b.gif?ex=6790ee1b&is=678f9c9b&hm=aac9852d3a0c670eac90bdf4abb27a3ffe0f4383a610640315332aa233846f19&" alt="GIF">
-                      <img class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258958142876811304/ezgif-4-6e77e18578.gif?ex=6790f2e3&is=678fa163&hm=5a16d36393a9a63937078b33d07fada182e94180e8983c1ee19d45510a746197&" alt="GIF">
+                      <img class="lazyload" loading="lazy" src="https://media.discordapp.net/attachments/738550587364212767/860593051058700289/Sans_titre_3.gif?ex=67913dbc&is=678fec3c&hm=774544bc48efb057f6e9a99891405234bafd09f854a54235a441a148e168789c&">
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://media.discordapp.net/attachments/828663058271567944/878351544498667530/2021-08-20_20-11-04-7.gif?ex=67913f1f&is=678fed9f&hm=dfe9af99408b8c2a02c96742bba1a3c4f3dd8b68b507ce04298ef45b60508f1e&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1306680588509380718/unknown_2024.11.14-18.46_2.gif?ex=679132a1&is=678fe121&hm=3ca808ea34ab3f100a6c76ba9c04b63151836f5c09245759e22e7483761edc60&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258147669264695327/ezgif-7-98a934dc46.gif?ex=6790a313&is=678f5193&hm=e1ef5c66e2dfd1899ad99b7ce1544620db590e975bbc0fe9f1cf3c4c17b6e472&">
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1261314159472148611/unknown_2024.07.12-15.28_1.gif?ex=6790f359&is=678fa1d9&hm=ea0951ceb81496ce626d2812ef985217cde3946b67ffb5fe77fb4486381f55b1&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1257082400777834597/VidosanstitreRaliseavecClipchamp2-ezgif.com-video-to-gif-converter_1.gif?ex=6790b777&is=678f65f7&hm=045f05d0e5a1131f632fcb8cc17cfead5a459ab580fbe648d573dc263cdc7e25&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1257069816041181275/ezgif-7-aee4137ab6.gif?ex=6790abbf&is=678f5a3f&hm=d1a1b91df6bc33b094f57b562a1bf70d53f107dfb10e43acb4a870577c1ae48f&">
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258177243402993755/Video_sans_titre_Realisee_avec_Clipchamp_5.gif?ex=6790be9e&is=678f6d1e&hm=ad9a48107077dcdbae5c1eb0a0b364f56e2ede827bead156bd95aec03e84f99f&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258889544099565638/ezgif-4-d6ad42981a-1.gif?ex=6790b300&is=678f6180&hm=476a6bd0ad45cec3731b2b7c8d08e9ed12476d7948812ca730ee4832147e5a65&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258931077729484871/ezgif-4-381c635220.gif?ex=6790d9ae&is=678f882e&hm=f8023f0d429d06afb094e0bdfc0e1e4adb2d6ad782ffc5f4486fecb2dbdcc498&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258949730818588812/ezgif-4-d660424049.gif?ex=6790eb0d&is=678f998d&hm=0351ffbb2e155295a4c6a8502b774c28e2b6d4613c0589e2cb3ce36a99467422&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258953010630103050/ezgif-4-f8e447f04b.gif?ex=6790ee1b&is=678f9c9b&hm=aac9852d3a0c670eac90bdf4abb27a3ffe0f4383a610640315332aa233846f19&" >
+                      <img class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1258958142876811304/ezgif-4-6e77e18578.gif?ex=6790f2e3&is=678fa163&hm=5a16d36393a9a63937078b33d07fada182e94180e8983c1ee19d45510a746197&" >
                   </div>
-                  <div class="flex left  overflow-x-hidden h-64">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/1256011047270092841/2024-06-28_00.18.09.png?ex=6790c631&is=678f74b1&hm=8408d9837fbcc06c9dabd274cbc4c27c9d6e7f69309c591a56a753182cb5d59b&" width="605" height="339" alt="Image 1">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/831843717609685003/2021-04-14_12.49.23.png?ex=6790cd55&is=678f7bd5&hm=30b5695b65acae7e11b339f9dbafa365c20194381cce20122f3afbf1c2094543&" width="605" height="339" alt="Image 2">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/843091376354230272/2021-05-15_13.43.55.png?ex=6790da08&is=678f8888&hm=f1e0bd2ef793ad47836a52df060f69fb4a59bdd83f0028dd1e48be795c625370&" width="605" height="339" alt="Image 3">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/843065810263474206/2021-05-14_19.14.35.png?ex=6790c238&is=678f70b8&hm=c1457a0e629ce6c8df8b86dcf699ed676c7c367913679f027847744edc92c891&" width="605" height="339" alt="Image 4">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/829734729405300757/2021-04-08_16.18.43.png?ex=67910a2f&is=678fb8af&hm=b863ff0c9f3103cac27c01651796f74555fb7e8241ff3c453885a3186b63398c&" width="605" height="339" alt="Image 5">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/829734724108025877/2021-04-07_19.17.32.png?ex=67910a2d&is=678fb8ad&hm=aba7dd93b228e4657412cf85b8a2cba8d4f81120d2af04a7995cc33c26eea8d1&" width="605" height="339" alt="Image 6">
-                      <img class="ml-2 h-64" src="https://media.discordapp.net/attachments/738549495146741781/877617815371280454/2021-08-18_19.42.38.png?ex=679136c8&is=678fe548&hm=38b0c086e71f3e062ad8d0ec83055387e47943664666dd1189303de412b840af&=&format=webp&quality=lossless&width=605&height=339" width="605" height="339" alt="Image 7">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/878642803243098132/image0.png?ex=6790fce0&is=678fab60&hm=f9baa67ed6182a720bae2b01a1237bee07f299cb48daf189135769fcb8b737b5&" width="605" height="339" alt="Image 8">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/882291812868448276/2021-08-29_16.png?ex=67911448&is=678fc2c8&hm=f2875887e67f7e88dfa457508ffc27ad223943aaf62157833a47c297bcf1bbee&" width="605" height="339" alt="Image 9">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/897933459010494484/2021-10-13_20.46.46.png?ex=6790a273&is=678f50f3&hm=e8bed219c0da2e41f1f843c0427713b6ff6efd0f71897ddc16e0beadfd451411&" width="605" height="339" alt="Image 10">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/892859409649258546/2021-09-29_21.30.14.png?ex=67914a9f&is=678ff91f&hm=fbc32ff7ac56836cf9c104edb97ff0daea834d6e576594d2df1173cd698d94b3&" width="605" height="339" alt="Image 11">
-                      <img class="ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/921789285961723935/2021-12-06_16.46.59.png?ex=679111ab&is=678fc02b&hm=4b726a093164915c1ec931c16237bd6f3b052ee63c36ec9b2351fd94554114c6&" width="605" height="339" alt="Image 12">
+                  <div class="flex right  overflow-x-hidden h-64">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/1256011047270092841/2024-06-28_00.18.09.png?ex=6790c631&is=678f74b1&hm=8408d9837fbcc06c9dabd274cbc4c27c9d6e7f69309c591a56a753182cb5d59b&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/831843717609685003/2021-04-14_12.49.23.png?ex=6790cd55&is=678f7bd5&hm=30b5695b65acae7e11b339f9dbafa365c20194381cce20122f3afbf1c2094543&" width="605" height="339">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/843091376354230272/2021-05-15_13.43.55.png?ex=6790da08&is=678f8888&hm=f1e0bd2ef793ad47836a52df060f69fb4a59bdd83f0028dd1e48be795c625370&" width="605" height="339">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/843065810263474206/2021-05-14_19.14.35.png?ex=6790c238&is=678f70b8&hm=c1457a0e629ce6c8df8b86dcf699ed676c7c367913679f027847744edc92c891&" width="605" height="339">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/829734729405300757/2021-04-08_16.18.43.png?ex=67910a2f&is=678fb8af&hm=b863ff0c9f3103cac27c01651796f74555fb7e8241ff3c453885a3186b63398c&" width="605" height="339">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/829734724108025877/2021-04-07_19.17.32.png?ex=67910a2d&is=678fb8ad&hm=aba7dd93b228e4657412cf85b8a2cba8d4f81120d2af04a7995cc33c26eea8d1&" width="605" height="339">
+                      <img class="lazyload ml-2 h-64" src="https://media.discordapp.net/attachments/738549495146741781/877617815371280454/2021-08-18_19.42.38.png?ex=679136c8&is=678fe548&hm=38b0c086e71f3e062ad8d0ec83055387e47943664666dd1189303de412b840af&=&format=webp&quality=lossless&width=605&height=339" width="605" height="339">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/878642803243098132/image0.png?ex=6790fce0&is=678fab60&hm=f9baa67ed6182a720bae2b01a1237bee07f299cb48daf189135769fcb8b737b5&" width="605" height="339">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/882291812868448276/2021-08-29_16.png?ex=67911448&is=678fc2c8&hm=f2875887e67f7e88dfa457508ffc27ad223943aaf62157833a47c297bcf1bbee&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/897933459010494484/2021-10-13_20.46.46.png?ex=6790a273&is=678f50f3&hm=e8bed219c0da2e41f1f843c0427713b6ff6efd0f71897ddc16e0beadfd451411&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738549495146741781/892859409649258546/2021-09-29_21.30.14.png?ex=67914a9f&is=678ff91f&hm=fbc32ff7ac56836cf9c104edb97ff0daea834d6e576594d2df1173cd698d94b3&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/738537083047510116/921789285961723935/2021-12-06_16.46.59.png?ex=679111ab&is=678fc02b&hm=4b726a093164915c1ec931c16237bd6f3b052ee63c36ec9b2351fd94554114c6&" width="605" height="339" >
 
                   </div>
                   <div class="flex right overflow-x-hidden h-64">
-                      <video loading="lazy" src="https://cdn.discordapp.com/attachments/738549495146741781/1127632819376627894/Galade_Spoil_1_3_Nourriture_et_boisson.mp4?ex=67911866&is=678fc6e6&hm=69e1940647d3df13c84bbf6800de0b96413221cf66802ffba68cfeb0a1d30d0d&" autoplay muted></video>
-                      <video class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738549495146741781/1107418403473473586/Immersion_dans_la_Peau_dun_Alchimiste.mp4?ex=6790b982&is=678f6802&hm=688480e3af9dd422eff7ec7e0b9e1b700ee98c5d2f76370cd96355ad9c1d1b10&" autoplay muted></video>
-                      <video class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738549495146741781/1098367614776000582/GaladeRP_Spoil_1.mp4?ex=6790c1ce&is=678f704e&hm=ca975c33d4937c818dc71fd30163a992a9c2bb18ce31ae2c455106ea1a91da43&" autoplay muted></video>
-                      <video class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1220098485987184671/SPOILER_Video_sans_titre_Realisee_avec_Clipchamp_4.mp4?ex=6790a483&is=678f5303&hm=c32e4550ffb044b254e01dcab948d4918bb6aa1c1fcec1fbef0dfcf2d1870e97&" autoplay muted></video>
-                      <video class="ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1134552932847730718/Tuto_Emote.mp4?ex=679138c2&is=678fe742&hm=1520f34a7b72454d2392a29aea46ccc62e02eb644d413a12b7cd31cd0af3c43e&" autoplay muted></video>
-                      <video class="ml-2 h-64" loading="lazy" src="assets/img/mp41.mp4" autoplay muted></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738549495146741781/1127632819376627894/Galade_Spoil_1_3_Nourriture_et_boisson.mp4?ex=67911866&is=678fc6e6&hm=69e1940647d3df13c84bbf6800de0b96413221cf66802ffba68cfeb0a1d30d0d&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738549495146741781/1107418403473473586/Immersion_dans_la_Peau_dun_Alchimiste.mp4?ex=6790b982&is=678f6802&hm=688480e3af9dd422eff7ec7e0b9e1b700ee98c5d2f76370cd96355ad9c1d1b10&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738549495146741781/1098367614776000582/GaladeRP_Spoil_1.mp4?ex=6790c1ce&is=678f704e&hm=ca975c33d4937c818dc71fd30163a992a9c2bb18ce31ae2c455106ea1a91da43&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1220098485987184671/SPOILER_Video_sans_titre_Realisee_avec_Clipchamp_4.mp4?ex=6790a483&is=678f5303&hm=c32e4550ffb044b254e01dcab948d4918bb6aa1c1fcec1fbef0dfcf2d1870e97&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/738550587364212767/1134552932847730718/Tuto_Emote.mp4?ex=679138c2&is=678fe742&hm=1520f34a7b72454d2392a29aea46ccc62e02eb644d413a12b7cd31cd0af3c43e&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="assets/img/mp41.mp4" autoplay muted loop></video>
 
                   </div>
               </div>
@@ -305,19 +312,110 @@
       </div>
   </div>
   <div id="Metro" class="parallax" style="background-image: url('https://cdn.discordapp.com/attachments/694228083410075668/991315825233514636/2022-06-28_14.13.59.png?ex=6790e14e&is=678f8fce&hm=13798375d951fc7fc793ee975e912c0693ee741a1d4280d0ca29012a134247ea&')">
-      <div class="w-full py-4 min-h-screen">
+      <div class="w-full py-4 min-h-screen" data-aos="flip-up"
+           data-aos-duration="500">
+          <div class="text-white py-20 min-h-screen">
+              <h1 class="text-5xl font-bold text-center">Metro</h1>
+              <div class="flex flex-row justify-center">
+              </div>
+
+              <div class="flex flex-row justify-center pt-2">
+                  <img class="lazyload" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white" alt="Electron.js">
+              </div>
+              <div class="auto-scroll-area mt-5">
+                  <div class="flex right  overflow-x-hidden h-64">
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/694228083410075668/984555383613980814/2022-06-09_22.22.10.png?ex=679155a7&is=67900427&hm=58b23876e76379fbd779ebc2ad3e00ed74b0c3652f7a1e81730a6e47c80ac4dc&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/694228083410075668/984555384016609410/2022-06-09_22.22.56.png?ex=679155a7&is=67900427&hm=b2609e6988273bf4d00b310465e5ea69a2afec5ec82c5cb1671de4b8493798ed&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/694228083410075668/984555384406683648/2022-06-09_22.24.42.png?ex=679155a7&is=67900427&hm=c80e2299f47ec04d2fac0417721811f1becf39d497d9d711d35ac9441f013393&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/694228083410075668/984555384771592202/2022-06-09_22.25.43.png?ex=679155a7&is=67900427&hm=e7b8a497a2799d75c6803ae6b4ea57cecc2500195cfc56f1887937874d657f2f&" width="605" height="339" >
+                      <img class="lazyload ml-2 h-64" src="https://cdn.discordapp.com/attachments/694228083410075668/984555385090363522/2022-06-09_22.29.13.png?ex=679155a7&is=67900427&hm=8102db6bcbc8b00e3b45cbdefd2f5b1ea1d69ddda64df31eb19b42dcf500768c&" width="605" height="339" >
+                  </div>
+                  <div class="flex right overflow-x-hidden h-64">
+
+                  </div>
+              </div>
+
+
+          </div>
       </div>
   </div>
   <div id="#InvasionZ" class="parallax" style="background-image: url('https://cdn.discordapp.com/attachments/1305249340151042079/1313526702965788692/2024-12-03_16.24.28.png?ex=67910e12&is=678fbc92&hm=6ec94617c12d8adae37253e05756c20c45373dddc637b104576fe300a5d840b5&')">
-      <div class="w-full py-4 min-h-screen">
+      <div class="w-full py-4 min-h-screen" data-aos="flip-up"
+           data-aos-duration="500">
+          <div class="text-white py-20 min-h-screen">
+              <h1 class="text-5xl font-bold text-center">InvasionZ</h1>
+              <div class="flex flex-row justify-center">
+                  <a class="underline-anim after:bg-red-500 text-2xl me-2" href="https://invasionz.fr/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" class="inline" width="30px" fill="currentColor"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+                      Website
+                  </a>
+                  <a class="underline-anim after:bg-red-500 text-2xl" href="https://discord.gg/CHhAYzpJha" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" class="inline" fill="currentColor"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+                      Discord
+                  </a>
+                  <a class="underline-anim after:bg-red-500 text-2xl ml-2" href="https://github.com/invasionz-net/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" class="inline" fill="currentColor"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+                      Github
+                  </a>
+              </div>
+
+              <div class="flex flex-row justify-center pt-2">
+                  <img class="lazyload" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+              </div>
+              <div class="auto-scroll-area mt-5">
+
+                  <div class="flex right overflow-x-hidden h-64">
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/1305249340151042079/1326728787022450830/2025-01-09_02-44-54.mp4?ex=6790f6b8&is=678fa538&hm=41e9294cd6d8c4a9dcbc763e11db8f68cc363b702d81a9c0297bcbcbed972804&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/1305249340151042079/1323485078860464129/Systeme_final_Realisee_avec_Clipchamp.mp4?ex=67910747&is=678fb5c7&hm=af6aca4a04536d390b3730469fcddb09c7c3fc1dba18760cfeaf5057543bf467&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/1305249340151042079/1321101585379491971/2024-12-24_14-04-42.mp4?ex=6790ed3a&is=678f9bba&hm=58e2171d8a60f3be1eef65380c8cc5d47311cd79d52eb550148d7801e91c9849&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/1305249340151042079/1320884498254135436/2024-12-23_23-41-58.mp4?ex=6791748d&is=6790230d&hm=5dd4533ccad98d8f23c78a1e4037c771c5ad967fdcba59e31a03391c359ba325&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/1305249340151042079/1320169942296956949/2024-12-22_00-21-01.mp4?ex=6790d551&is=678f83d1&hm=514ae083f5e82957544188706ddb5b0d314a65eb8b147e32d2cb0790fd739bef&" autoplay muted loop></video>
+                      <video class="lazyload ml-2 h-64" loading="lazy" src="https://cdn.discordapp.com/attachments/1305249340151042079/1317138245263298571/Video_sans_titre_4.mp4?ex=67910294&is=678fb114&hm=38fb9862fa7ca18461488bb47cff729c7ae77c882de0360f604d9b509b7e994f&" autoplay muted loop></video>
+
+                  </div>
+              </div>
+
+
+          </div>
       </div>
   </div>
   <div id="Icare" class="parallax" style="background-image: url('https://media.istockphoto.com/id/1058444714/fr/photo/r%C3%A9sum%C3%A9-blur-sc%C3%A8ne-skyline-beaut%C3%A9-avec-fond-color%C3%A9-et-brillant-jeu-de-lumi%C3%A8re-pour-la.jpg?s=612x612&w=0&k=20&c=3LqwvbvdDMh8-sZa80vKroL5lWmWYbNmW6EkyWaN_Ek=')">
-      <div class="w-full py-4 min-h-screen backdrop-blur-lg">
+      <div class="w-full py-4 min-h-screen backdrop-blur-lg" >
+          <div class="text-white py-20 min-h-screen" data-aos="flip-up"
+               data-aos-duration="500">
+              <h1 class="text-5xl font-bold text-center">Icare</h1>
+              <div class="flex flex-row justify-center">
+              </div>
+
+              <div class="flex flex-row justify-center pt-2">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+                  <img class="lazyload pl-2" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+              </div>
+              <p class="flex flex-row justify-center text-8xl mt-20">Build in progress !</p>
+
+
+          </div>
       </div>
   </div>
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="node_modules/lazysizes/lazysizes.js" async></script>
+  <script>
+      AOS.init();
+  </script>
 </body>
 </html>

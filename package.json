@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Infuseting/Infuseting.github.io#readme",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2"
   }
 }

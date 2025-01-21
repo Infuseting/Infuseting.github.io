@@ -37,7 +37,7 @@ scrollAreas.forEach(area => {
 
 async function infiniteScroll(element, direction) {
     let scrollAmount = 0;
-    const step = 1; // Adjust the scroll speed here
+    const step = 1  ; // Adjust the scroll speed here
     const width = Math.random() * (element.scrollWidth - window.innerWidth);
     scrollAmount = width;
     element.scrollLeft = width;
@@ -45,7 +45,9 @@ async function infiniteScroll(element, direction) {
     async function scroll() {
         element.scrollLeft += direction === 'left' ? -step : step;
         scrollAmount += step;
-
+        if (scrollAmount < 0) {
+            scrollAmount = element.scrollWidth - window.innerWidth;
+        }
         if (scrollAmount >= element.scrollWidth - window.innerWidth) {
             const firstChild = element.firstElementChild;
             element.appendChild(firstChild);

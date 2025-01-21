@@ -583,6 +583,14 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .inline {
   display: inline;
 }
@@ -759,6 +767,11 @@ video {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
