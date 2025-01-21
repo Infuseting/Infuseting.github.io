@@ -1,0 +1,47 @@
+# Simple workflow for deploying static content from /src to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Trigger on pushes to the main branch
+  push:
+    branches: ["main"]
+
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+# Set permissions for the GITHUB_TOKEN
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Step 2: Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Step 3: Upload the content of /src directory
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Specify the path to the /src directory
+          path: './src'
+
+      # Step 4: Deploy the uploaded artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
