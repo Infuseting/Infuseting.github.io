@@ -50,9 +50,11 @@ async function infiniteScroll(element, direction) {
         }
         if (scrollAmount >= element.scrollWidth - window.innerWidth) {
             const firstChild = element.firstElementChild;
-            element.appendChild(firstChild);
-            scrollAmount -= firstChild.scrollWidth;
-            element.scrollLeft -= firstChild.scrollWidth;
+            if (firstChild) {
+                element.appendChild(firstChild);
+                scrollAmount -= firstChild.scrollWidth;
+                element.scrollLeft -= firstChild.scrollWidth;
+            }
         }
 
         setTimeout(() => scroll(), 20);
